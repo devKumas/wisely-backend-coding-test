@@ -1,7 +1,8 @@
-import { Column, Entity } from 'typeorm';
+import { Column, Entity, OneToMany } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsEmail, IsNotEmpty, IsString, Length } from 'class-validator';
 import { CoreEntityAndDelete } from '../../core.entity';
+import { Subscription } from '../../subscription/entities/subscription.entity';
 
 @Entity({ name: 'users' })
 export class User extends CoreEntityAndDelete {
@@ -30,4 +31,7 @@ export class User extends CoreEntityAndDelete {
   @IsString()
   @Column({ name: 'name', type: 'varchar', length: 10 })
   name: string;
+
+  @OneToMany(() => Subscription, (subscription) => subscription.User)
+  Subscription: Subscription[];
 }
