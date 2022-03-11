@@ -16,8 +16,9 @@ async function bootstrap() {
   const config = new DocumentBuilder()
     .setTitle('Wisely API ')
     .setDescription('The Subscription API description')
-    .addTag('인증')
-    .addTag('사용자')
+    .addTag('Auth')
+    .addTag('Product')
+    .addTag('Subscription')
     .addBearerAuth(
       {
         type: 'http',

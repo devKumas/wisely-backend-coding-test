@@ -11,4 +11,8 @@ export class ProductService {
   findAll() {
     return this.productRepository.findAll();
   }
+
+  findById(id: number) {
+    return this.productRepository.findById(id);
+  }
 }

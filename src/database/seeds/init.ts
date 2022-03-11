@@ -14,9 +14,9 @@ export class CreateInitialData implements Seeder {
       .values([
         {
           id: 1,
-          email: 'user@admin.com',
+          email: 'user@domain.com',
           password: hashedPassword,
-          name: 'user',
+          name: '홍길동',
         },
       ])
       .execute();
