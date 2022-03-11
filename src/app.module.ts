@@ -5,6 +5,7 @@ import Joi from 'joi';
 import { AuthModule } from './auth/auth.module';
 import { ProductModule } from './product/product.module';
 import { SubscriptionModule } from './subscription/subscription.module';
+import { OrderModule } from './order/order.module';
 import ormconfig from './ormconfig';
 
 @Module({
@@ -33,6 +34,7 @@ import ormconfig from './ormconfig';
     AuthModule,
     ProductModule,
     SubscriptionModule,
+    OrderModule,
   ],
   controllers: [],
   providers: [],

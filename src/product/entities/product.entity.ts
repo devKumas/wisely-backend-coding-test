@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty, IsString, Length } from 'class-validator';
-import { SubscriptionProduct } from 'src/subscription/entities/subscriptionProduct.entity';
 import { Column, Entity, OneToMany } from 'typeorm';
+import { SubscriptionProduct } from '../../subscription/entities/subscription-product.entity';
 import { CoreEntityAndDelete } from '../../core.entity';
 
 @Entity({ name: 'products' })
