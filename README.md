@@ -12,7 +12,7 @@ NestJs, TypeORM
 
 ## 개발환경
 
-- 테이블 생성
+- 프로젝트 실행
 
 ```bash
 $ yarn install
